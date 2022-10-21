@@ -16,10 +16,10 @@ jobs:
     name: Create release branch and PRs into develop/main
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master for ${{ github.event.inputs.release-type }} release
+      - name: Checkout main for ${{ github.event.inputs.release-type }} release
         uses: actions/checkout@v3
         with:
-          ref: master
+          ref: main
       - name: Create release branch and generate PR body
         id: create-release
         env:
