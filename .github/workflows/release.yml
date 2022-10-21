@@ -5,6 +5,7 @@ on:
       release-type:
         type: choice
         description: Release type (major/minor/patch)
+        default: patch
         options:
           - major
           - minor
